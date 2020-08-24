@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="./css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="./css/Registracija.css">
+  <link rel="stylesheet" href="./css/menu.css">
+  <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+  <!-- The core Firebase JS SDK is always required and must be listed first -->
+  <script src="https://www.gstatic.com/firebasejs/7.14.6/firebase-app.js"></script>
+
+  <!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+  <script src="https://www.gstatic.com/firebasejs/7.14.6/firebase-analytics.js"></script>
+  <!-- Add Firebase products that you want to use -->
+  <script src="https://www.gstatic.com/firebasejs/7.14.6/firebase-auth.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/7.14.6/firebase-firestore.js"></script>
+
+
+  <script src="./js/bootstrap.min.js"></script>
+  <title>Document</title>
+
+</head>
+
+<body>
+  <div class="outer">
+    <input type="checkbox" id="check">
+    <label for="check">
+      <i class="fas fa-bars" id="btn"></i>
+      <i class="fas fa-times" id="cancel"></i>
+    </label>
+    <div class="sidebar">
+    <header>Meni</header>
+  <ul>
+    <li><a href="index.html"><i class="fas fa-qrcode"></i>Naslovna</a></li>
+    <li><a href="Pocetna.html"><i class="fas fa-home"></i>Početna</a></li>
+    <li><a href="galerija.html"><i class="fas fa-images"></i>Galerija</a></li>
+    <li><a href="PonudaHotel.html"><i class="fas fa-calendar-week"></i>Ponuda</a></li>
+    <li><a href="./About.html"><i class="far fa-question-circle"></i>O nama</a></li>
+    <li><a href="./Kontakt.html"><i class="far fa-envelope"></i>Kontakt</a></li>
+    <li><a href="./Login.html"><i class="fas fa-sign-in-alt"></i>Login</a></li>
+    <li><a href="./Registracija.html"><i class="fas fa-user-alt"></i>Register</a></li>
+  </ul>
+</div>
+</div>
+  <div class="container">
+    <div style="margin: 20px auto;" class="col-6">
+      <h2>Registracija</h2>
+
+      <form action="">
+        <div class="form-group">
+          <label for="ime">Ime:</label>
+          <input type="text" class="form-control" id="ime" placeholder="Unesite ime" name="ime">
+        </div>
+        <div class="form-group">
+          <label for="prezime">Prezime:</label>
+          <input type="text" class="form-control" id="prezime" placeholder="Unesite prezime" name="prezime">
+        </div>
+        <div class="form-group">
+          <label for="email">Email:</label>
+          <input type="email" class="form-control" id="email" placeholder="Unesite email" name="email">
+        </div>
+        <div class="form-group">
+          <label for="pwd">Lozinka:</label>
+          <input type="password" class="form-control" id="pwd" placeholder="Unesite lozinku" name="pswd">
+        </div>
+
+        <input type="Submit" class="btn btn-primary" value="Posalji"></button>
+      </form>
+    </div>
+  </div>
+  <script>
+    // Your web app's Firebase configuration
+    function getObject(string) {
+      var params = {};
+      var vars = string.split('&');
+      if (vars[0] == "") {
+        return null;
+      }
+      for (var i = 0; i < vars.length; i++) {
+        var pair = vars[i].split('=');
+        params[pair[0]] = decodeURIComponent(pair[1]);
+      }
+      return params;
+    };
+    var firebaseConfig = {
+      apiKey: "AIzaSyALWDeayoithExTLB7hWhL_BOpzOboRPlo",
+      authDomain: "website-4559b.firebaseapp.com",
+      databaseURL: "https://website-4559b.firebaseio.com",
+      projectId: "website-4559b",
+      storageBucket: "website-4559b.appspot.com",
+      messagingSenderId: "734011636536",
+      appId: "1:734011636536:web:db39aade945476ebf89fcd",
+      measurementId: "G-BVETTGYH3Y"
+    };
+    // Initialize Firebase
+    var db = firebase.initializeApp(firebaseConfig);
+    var auth = firebase.auth();
+
+
+    $("form").on("submit", function (event) {
+      event.preventDefault();
+      var registracija = getObject($(this).serialize());
+      console.log(registracija);
+      auth.createUserWithEmailAndPassword(registracija.email, registracija.pswd).then(function (user) {
+        db.collection("users").add({
+          first: registracija.ime,
+          last: registracija.prezime
+        })
+          .then(function (docRef) {
+            console.log("Document written with ID: ", docRef.id);
+          })
+          .catch(function (error) {
+            console.error("Error adding document: ", error);
+          });
+
+
+      }).catch(function (error) {
+        // Handle Errors here.
+        var errorCode = error.code;
+        var errorMessage = error.message;
+        // ...
+      });
+    });
+  </script>
+</body>
+
+</html>

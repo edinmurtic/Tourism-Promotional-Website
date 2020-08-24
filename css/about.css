@@ -1,0 +1,53 @@
+body {
+    margin: 0px;
+    padding: 0px;
+}
+
+#naslovna-slika {
+    height: 400px;
+    width: 100%;
+    background-image: url('../Slike/10.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    background-position-y: -70px;
+}
+
+#naslovna p {
+    text-align: justify;
+}
+
+:-webkit-any(article,
+aside,
+nav,
+section) h1 {
+    margin-block-start: 0em;
+    margin-block-end: 0em;
+}
+
+#naslov {
+    margin: 0px auto;
+    padding: 15px;
+    background: rgb(240, 248, 255);
+}
+
+section {
+    /* margin-top: 50px; */
+    background: rgba(116, 185, 255, 0.09);
+    text-align: center;
+}
+
+section h1 {
+    display: inline-block;
+    text-transform: uppercase;
+    border-bottom: 4px solid #3498db;
+    font-size: 20px;
+    bottom: 0;
+}
+
+.container {
+    max-width: 1200px;
+    width: 100%;
+    padding: 25px 50px;
+    margin: 0 auto;
+}

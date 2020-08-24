@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" href="css/kontaktstyle.css">
+    <link rel="stylesheet" href="css/headerstyle.css">
+    <link rel="stylesheet" href="css/footerstyle.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body>
+    <nav>
+        <div class="logo">USK-Visit Us</div>
+        <label for="btn" class="icon">
+        <span class="fa fa-bars"></span>
+      </label>
+        <input type="checkbox" id="btn">
+        <ul>
+            <li><a href="index.html">Naslovna</a></li>
+            <li><a href="Pocetna.html">Početna</a></li>
+
+            <li>
+                <label for="btn-2" class="show">Services +</label>
+                <a href="#">Servisi</a>
+                <input type="checkbox" id="btn-2">
+                <ul>
+                    <li><a href="./PonudaHotel.html#hoteli">Hoteli</a></li>
+
+                    <li><a href="./PonudaHotel.html#restorani">Restorani</a></li>
+                    <li><a href="./PonudaHotel.html#kafici">Barovi</a></li>
+
+
+                </ul>
+            </li>
+            <li><a href="galerija.html">Galerija</a></li>
+            <li><a href="About.html">O nama</a></li>
+            <li><label for="btn-1" class="show">Pristupi nam +</label>
+                <a href="#">Pristupi nam</a>
+                <input type="checkbox" id="btn-1">
+                <ul>
+                    <li><a href="Registracija.html">Registracija</a></li>
+                    <li><a href="Login.html">Prijava</a></li>
+                    <li><a href="Kontakt.html">Kontakt</a></li>
+
+                </ul>
+            </li>
+        </ul>
+    </nav>
+    <div class="contact-section">
+
+        <h1>Kontaktirajte nas</h1>
+        <div class="border"></div>
+        <form id="fs-frm" class="contact-form" accept-charset="utf-8" action="https://formspree.io/murticedin@gmail.com" method="post">
+            <fieldset id="fs-frm-inputs" class="ferr">
+                <input type="text" class="contact-form-text" placeholder="Ime i prezime">
+                <input type="email" class="contact-form-text" name="_replyto" placeholder="E-mail">
+                <input type="text" class="contact-form-text" placeholder="Kontakt telefon">
+                <textarea class="contact-form-text" placeholder="" name="message" required=""></textarea>
+                <input type="hidden" name="_subject" id="email-subject" value="Contact Form Submission">
+            </fieldset>
+            <input type="submit" class="contact-form-btn" value="Submit">
+        </form>
+    </div>
+    <footer>
+        <div class="main-content container">
+            <div class="left box">
+                <h2>
+                    O nama</h2>
+                <div class="content">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras quis eleifend velit, sed vulputate sem. Pellentesque feugiat justo a pretium commodo. Aliquam sed aliquet ipsum. Proin ac finibus turpis, vestibulum gravida purus. Etiam
+                        ornare, turpis in maximus efficitur, erat lectus volutpat libero, quis sollicitudin augue ligula eu magna. Pellentesque suscipit viverra lorem, a mollis ante efficitur non. Quisque ultrices facilisis sapien.
+                    </p>
+                    <div class="social">
+                        <a href="https://facebook.com"><span class="fab fa-facebook-f"></span></a>
+                        <a href="https://twitter.com"><span class="fab fa-twitter"></span></a>
+                        <a href="https://instagram.com"><span class="fab fa-instagram"></span></a>
+                        <a href="https://youtube.com"><span class="fab fa-youtube"></span></a>
+                    </div>
+                </div>
+            </div>
+            <div class="center box">
+                <h2>
+                    Adresa:</h2>
+                <div class="content">
+                    <div class="place">
+                        <span class="fas fa-map-marker-alt"></span>
+                        <span class="text">Ozimice I, Bihać</span>
+                    </div>
+                    <div class="phone">
+                        <span class="fas fa-phone-alt"></span>
+                        <span class="text">+38762112312</span>
+                    </div>
+                    <div class="email">
+                        <span class="fas fa-envelope"></span>
+                        <span class="text">murticedin@outlook.com</span>
+                    </div>
+
+                </div>
+                <br>
+                <div class="bottom">
+                    <center>
+                        <span class="credit">Created By <a href="#">murticedin</a> | </span>
+                        <span class="far fa-copyright"></span> 2020 All rights reserved.
+                    </center>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
