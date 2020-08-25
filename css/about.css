@@ -1,6 +1,24 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
 body {
-    margin: 0px;
-    padding: 0px;
+    background: rgba(116, 185, 255, 0.09);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+section {
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    padding: 100px;
 }
 
 #naslovna-slika {
@@ -31,18 +49,35 @@ section) h1 {
     background: rgb(240, 248, 255);
 }
 
+
+/*
 section {
-    /* margin-top: 50px; */
+    /* margin-top: 50px; 
     background: rgba(116, 185, 255, 0.09);
     text-align: center;
-}
+}*/
 
 section h1 {
+    position: relative;
     display: inline-block;
     text-transform: uppercase;
     border-bottom: 4px solid #3498db;
     font-size: 20px;
     bottom: 0;
+}
+
+section p {
+    position: relative;
+}
+
+section video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    pointer-events: none;
 }
 
 .container {
