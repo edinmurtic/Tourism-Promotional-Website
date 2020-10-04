@@ -1,40 +1,60 @@
 @import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
 * {
     margin: 0;
+    /*koriste se za stvaranje prostora oko elemenata*/
     padding: 0;
+    /*koristi se za definisanje razmaka između ruba elementa i teksta koji se nalazi u elementu*/
 }
 
 .content1 {
     position: relative;
+    /*specificira tip postupka koji se koristi za pozicioniranje elementa*/
     margin: 130px auto;
+    /*koriste se za stvaranje prostora oko elemenata*/
     text-align: center;
+    /*određuje vodoravno poravnanje teksta u elementu.*/
     padding: 0 20px;
+    /*koristi se za definisanje razmaka između ruba elementa i teksta koji se nalazi u elementu*/
 }
 
 .content1 .text {
     font-size: 2.5rem;
+    /*određuje veličinu teksta*/
     font-weight: 600;
+    /*određuje debljinu znakova u tekstu*/
     color: #202020;
+    /*određuje boju teksta*/
 }
 
 .content1 .p {
     font-size: 2.1875rem;
+    /*određuje veličinu teksta*/
     font-weight: 600;
+    /*određuje debljinu znakova u tekstu*/
     color: #202020;
+    /*određuje boju teksta*/
 }
 
 footer {
     position: static;
+    /*specificira tip postupka koji se koristi za pozicioniranje elementa*/
     bottom: 0px;
+    /*utječe na vertikalni položaj pozicioniranog elementa. */
     width: 100%;
+    /*postavlja širinu elemenata*/
     color: #d9d9d9;
+    /*određuje boju teksta*/
     box-sizing: border-box;
+    /*omogućuje nam da u ukupnu širinu i visinu elementa uvrstimo obloge i obrube */
     font-family: 'Poppins', sans-serif;
+    /* navodi font elementa*/
     background: #3175B0;
+    /*određuje boju pozadine elementa*/
 }
 
 .main-content {
     display: flex;
+    /*određuje ponašanje zaslona elementa */
 }
 
 .main-content .box {
@@ -44,183 +64,274 @@ footer {
 
 .box h2 {
     font-size: 1.125rem;
+    /*određuje veličinu teksta*/
     font-weight: 600;
+    /*određuje debljinu znakova u tekstu*/
     text-transform: uppercase;
+    /*kontrolira pisanje velikih i malih slova teksta.*/
 }
 
 .box .content {
     margin: 20px 0 0 0;
+    /*koriste se za stvaranje prostora oko elemenata*/
     position: relative;
+    /*specificira tip postupka koji se koristi za pozicioniranje elementa*/
 }
 
 .box .content:before {
     position: absolute;
+    /*specificira tip postupka koji se koristi za pozicioniranje elementa*/
     content: '';
+    /* koristi se za umetanje sadržaja */
     top: -10px;
+    /*položaj uz gornji rub (kod okomitog pomaka)*/
     height: 2px;
+    /*postavlja visinu elemenata*/
     width: 100%;
+    /*postavlja širinu elemenata*/
     background: #1a1a1a;
+    /*određuje boju pozadine elementa*/
 }
 
 .box .content:after {
     position: absolute;
+    /*specificira tip postupka koji se koristi za pozicioniranje elementa*/
     content: '';
+    /* koristi se za umetanje sadržaja */
     height: 2px;
+    /*postavlja visinu elemenata*/
     width: 15%;
+    /*postavlja širinu elemenata*/
     background: #f12020;
+    /*određuje boju pozadine elementa*/
     top: -10px;
+    /*položaj uz gornji rub (kod okomitog pomaka)*/
 }
 
 .left {
     margin-right: 20px;
+    /*koriste se za stvaranje prostora oko elemenata*/
 }
 
 .left .content p {
     text-align: justify;
+    /*određuje vodoravno poravnanje teksta u elementu.*/
 }
 
 .left .content .social {
     margin: 20px 0 0 0;
+    /*koriste se za stvaranje prostora oko elemenata*/
 }
 
 .left .content .social a {
     padding: 0 2px;
+    /*koristi se za definisanje razmaka između ruba elementa i teksta koji se nalazi u elementu*/
 }
 
 .left .content .social a span {
     height: 40px;
+    /*postavlja visinu elemenata*/
     width: 40px;
+    /*postavlja širinu elemenata*/
     background: #1a1a1a;
+    /*određuje boju pozadine elementa*/
     line-height: 40px;
+    /*određuje visinu linija*/
     text-align: center;
+    /*određuje vodoravno poravnanje teksta u elementu.*/
     font-size: 18px;
+    /*određuje veličinu teksta*/
     border-radius: 5px;
+    /*postavljanje zaobljenjih uglova*/
     transition: 0.3s;
+    /*omogućuju glatku promjenu vrijednosti svojstava tijekom zadanog trajanja*/
     color: #d9d9d9;
+    /*određuje boju teksta*/
 }
 
 .left .content .social a span:hover {
     background: #f12020;
+    /*određuje boju pozadine elementa*/
 }
 
 .center .content .fas {
     font-size: 1.4375rem;
+    /*određuje veličinu teksta*/
     background: #1a1a1a;
+    /*određuje boju pozadine elementa*/
     height: 45px;
+    /*postavlja visinu elemenata*/
     width: 45px;
+    /*postavlja širinu elemenata*/
     line-height: 45px;
+    /*određuje visinu linija*/
     text-align: center;
+    /*određuje vodoravno poravnanje teksta u elementu.*/
     border-radius: 50%;
+    /*postavljanje zaobljenjih uglova*/
     transition: 0.3s;
+    /*omogućuju glatku promjenu vrijednosti svojstava tijekom zadanog trajanja*/
     cursor: pointer;
+    /*određuje pokazivač miša koji će se prikazati kada kursor pokazuje na element*/
 }
 
 .center {
     margin-left: 20px;
+    /*koriste se za stvaranje prostora oko elemenata*/
 }
 
 .center .content .fas:hover {
     background: #f12020;
+    /*određuje boju pozadine elementa*/
 }
 
 .center .content .text {
     font-size: 1.0625rem;
+    /*određuje veličinu teksta*/
     font-weight: 500;
+    /*određuje debljinu znakova u tekstu*/
     padding-left: 10px;
+    /*koristi se za definisanje razmaka između ruba elementa i teksta koji se nalazi u elementu*/
 }
 
 .center .content .phone {
     margin: 15px 0;
+    /*koriste se za stvaranje prostora oko elemenata*/
 }
 
 .right form .text {
     font-size: 1.0625rem;
+    /*određuje veličinu teksta*/
     margin-bottom: 2px;
+    /*koriste se za stvaranje prostora oko elemenata*/
     color: #111111;
+    /*određuje boju teksta*/
 }
 
 .right form .msg {
     margin-top: 10px;
+    /*koriste se za stvaranje prostora oko elemenata*/
 }
 
 .right form input,
 .right form .msgForm {
     width: 100%;
+    /*postavlja širinu elemenata*/
     font-size: 1.0625rem;
+    /*određuje veličinu teksta*/
     background: #151515;
+    /*određuje boju pozadine elementa*/
     padding-left: 10px;
+    /*koristi se za definisanje razmaka između ruba elementa i teksta koji se nalazi u elementu*/
     border: 1px solid #222222;
+    /*određuje vrstu obruba za prikaz.*/
 }
 
 .right form input:focus,
 .right form .msgForm:focus {
     outline-color: #3498db;
+    /*specificira boju obrisa.*/
 }
 
 .right form input {
     height: 35px;
+    /*postavlja visinu elemenata*/
 }
 
 .right form .btn {
     margin-top: 10px;
+    /*koriste se za stvaranje prostora oko elemenata*/
 }
 
 .right form .btn button {
     height: 40px;
+    /*postavlja visinu elemenata*/
     width: 100%;
+    /*postavlja širinu elemenata*/
     border: none;
+    /*određuje vrstu obruba za prikaz.*/
     outline: none;
+    /*Obris je crta koja se crta oko elemenata, izvan granica, kako bi se element "istaknuo".*/
     background: #f12020;
+    /*određuje boju pozadine elementa*/
     font-size: 1.0625rem;
+    /*određuje veličinu teksta*/
     font-weight: 500;
+    /*određuje debljinu znakova u tekstu*/
     cursor: pointer;
+    /*određuje pokazivač miša koji će se prikazati kada kursor pokazuje na element*/
     transition: .3s;
+    /*omogućuju glatku promjenu vrijednosti svojstava tijekom zadanog trajanja*/
 }
 
 .right form .btn button:hover {
     background: #000;
+    /*određuje boju pozadine elementa*/
 }
 
 .bottom center {
     padding: 3px;
+    /*koristi se za definisanje razmaka između ruba elementa i teksta koji se nalazi u elementu*/
     font-size: 0.9375rem;
+    /*određuje veličinu teksta*/
     background: #151515;
+    /*određuje boju pozadine elementa*/
 }
 
 .bottom center span {
     color: #656565;
+    /*određuje boju teksta*/
 }
 
 .bottom center a {
     color: #f12020;
+    /*određuje boju teksta*/
     text-decoration: none;
+    /* koristi se za ukrašavanje teksta */
 }
 
 .bottom center a:hover {
     text-decoration: underline;
+    /* koristi se za ukrašavanje teksta */
 }
 
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 900px
+/*određuje maksimalnu širinu */
+
+) {
     footer {
         position: relative;
+        /*specificira tip postupka koji se koristi za pozicioniranje elementa*/
         bottom: 0px;
+        /*utječe na vertikalni položaj pozicioniranog elementa. */
     }
     .main-content {
         flex-wrap: wrap;
+        /*određuje trebaju li se fleksibilni predmeti zamotati ili ne.*/
         flex-direction: column;
+        /*specificira smjer fleksibilnih predmeta.*/
         max-width: 1200px;
+        /*određuje maksimalnu širinu */
         width: 100%;
+        /*postavlja širinu elemenata*/
         padding: 25px 50px;
+        /*koristi se za definisanje razmaka između ruba elementa i teksta koji se nalazi u elementu*/
         margin: 0 auto;
+        /*koriste se za stvaranje prostora oko elemenata*/
     }
     .main-content .box {
         margin: 5px 0;
+        /*koriste se za stvaranje prostora oko elemenata*/
     }
 }
 
 .container {
     max-width: 1200px;
+    /*određuje maksimalnu širinu */
     width: 100%;
+    /*postavlja širinu elemenata*/
     padding: 25px 50px;
+    /*koristi se za definisanje razmaka između ruba elementa i teksta koji se nalazi u elementu*/
     margin: 0 auto;
+    /*koriste se za stvaranje prostora oko elemenata*/
 }

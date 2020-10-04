@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
+body {
+    margin: 0;
+    /*koriste se za stvaranje prostora oko elemenata*/
+    padding: 0;
+    /*koristi se za definisanje razmaka između ruba elementa i teksta koji se nalazi u elementu*/
+}
+
+#naslovna-slika img {
+    height: 700px;
+    /*postavlja visinu elemenata*/
+    width: 100%;
+    /*postavlja širinu elemenata*/
+    background-repeat: no-repeat;
+    /* postavlja hoće li / kako će se ponoviti pozadinska slika*/
+    background-size: cover;
+    /*određuje veličinu pozadinskih slika*/
+    position: relative;
+    /*specificira tip postupka koji se koristi za pozicioniranje elementa*/
+    background-position-y: -70px;
+    /* postavlja početni položaj pozadinske slike.*/
+}
+
+#naslovna p {
+    text-align: justify;
+    /*određuje vodoravno poravnanje teksta u elementu.*/
+}
+
+:-webkit-any(article,
+aside,
+nav,
+section) h1 {
+    margin-block-start: 0em;
+    /*definira logičku marginu početka elementa*/
+    margin-block-end: 0em;
+    /*definira logičku marginu kraja elementa*/
+}
+
+#naslov {
+    margin: 0px auto;
+    /*koriste se za stvaranje prostora oko elemenata*/
+    padding: 15px;
+    /*koristi se za definisanje razmaka između ruba elementa i teksta koji se nalazi u elementu*/
+    background: rgb(240, 248, 255);
+    /*određuje boju pozadine elementa*/
+}
+
+section {
+    margin-top: 0px;
+    /*koriste se za stvaranje prostora oko elemenata*/
+    background: rgba(116, 185, 255, 0.09);
+    /*određuje boju pozadine elementa*/
+    text-align: center;
+    /*određuje vodoravno poravnanje teksta u elementu.*/
+}
+
+section h1 {
+    display: inline-block;
+    /*određuje ponašanje zaslona elementa */
+    text-transform: uppercase;
+    /*kontrolira pisanje velikih i malih slova teksta.*/
+    border-bottom: 4px solid #3498db;
+    /*koristi se za postavljanje granice na dnu elementa */
+    font-size: 20px;
+    /*određuje veličinu teksta*/
+    bottom: 0;
+    /*utječe na vertikalni položaj pozicioniranog elementa. */
+    text-align: center;
+    /*određuje vodoravno poravnanje teksta u elementu.*/
+}
+
+section h1 a {
+    color: black;
+    /*određuje boju teksta*/
+    text-decoration: none;
+    /* koristi se za ukrašavanje teksta */
+}
+
+.container {
+    max-width: 1200px;
+    /*postavlja maksimalnu širinu elemenata*/
+    width: 100%;
+    /*postavlja širinu elemenata*/
+    padding: 25px 50px;
+    /*koristi se za definisanje razmaka između ruba elementa i teksta koji se nalazi u elementu*/
+    margin: 0 auto;
+    /*koriste se za stvaranje prostora oko elemenata*/
+    text-align: justify;
+    /*određuje vodoravno poravnanje teksta u elementu.*/
+}

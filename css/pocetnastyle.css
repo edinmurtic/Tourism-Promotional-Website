@@ -1,221 +1,347 @@
  body {
      margin: 0;
+     /*koriste se za stvaranje prostora oko elemenata*/
      padding: 0;
+     /*koristi se za definisanje razmaka između ruba elementa i teksta koji se nalazi u elementu*/
      font-family: 'Montserrat', sans-serif;
+     /* navodi font elementa*/
  }
  
  a {
      transition: all .5s;
+     /*omogućuju glatku promjenu vrijednosti svojstava tijekom zadanog trajanja*/
      text-decoration: none;
+     /* koristi se za ukrašavanje teksta */
      color: #fff;
+     /*određuje boju teksta*/
  }
  
  .singleBlog img {
      width: 100%;
+     /*postavlja širinu elemenata*/
      transition: all .5s;
+     /*omogućuju glatku promjenu vrijednosti svojstava tijekom zadanog trajanja*/
  }
  
  section {
      padding: 70px 50px 50px 50px;
+     /*koristi se za definisanje razmaka između ruba elementa i teksta koji se nalazi u elementu*/
      text-align: justify;
+     /*određuje vodoravno poravnanje teksta u elementu.*/
      /* margin-top: 50px; */
      background: rgba(116, 185, 255, 0.09);
+     /*određuje boju pozadine elementa*/
      text-align: center;
+     /*određuje vodoravno poravnanje teksta u elementu.*/
  }
  
  section h1 {
      display: inline-block;
+     /*određuje ponašanje zaslona elementa */
      text-transform: uppercase;
+     /*kontrolira pisanje velikih i malih slova teksta.*/
      border-bottom: 4px solid #3498db;
+     /*koristi se za postavljanje granice na dnu elementa */
      font-size: 20px;
+     /*određuje veličinu teksta*/
      padding-bottom: 10px;
+     /*koristi se za postavljanje granice na dnu elementa */
+     /*koristi se za definisanje razmaka između ruba elementa i teksta koji se nalazi u elementu*/
      margin-top: 40px;
+     /*koriste se za stvaranje prostora oko elemenata*/
  }
  
  .container {
      max-width: 1200px;
+     /*postavlja maksimalnu širinu elemenata*/
      width: 100%;
+     /*postavlja širinu elemenata*/
      margin: 0 auto;
+     /*koriste se za stvaranje prostora oko elemenata*/
  }
  
  main {
      display: grid;
+     /*određuje ponašanje zaslona elementa */
      grid-template-columns: repeat(4, 1fr);
+     /*specificira broj (i širine) stupaca u rasporedu mreže.*/
      grid-gap: 30px;
+     /* definira veličinu razmaka između redaka i stupaca u rasporedu mreže*/
      margin: 30px 15px 0px 15px;
+     /*koriste se za stvaranje prostora oko elemenata*/
  }
  
  header {
      width: 70%;
+     /*postavlja širinu elemenata*/
      margin: 0 auto;
+     /*koriste se za stvaranje prostora oko elemenata*/
  }
  
  header h1 {
      margin: 0;
+     /*koriste se za stvaranje prostora oko elemenata*/
      font-size: 50px;
+     /*određuje veličinu teksta*/
      color: rgba(52, 73, 94, 1.0);
+     /*određuje boju teksta*/
      font-weight: 500;
+     /*određuje debljinu znakova u tekstu*/
  }
  
  .singleBlog {
      position: relative;
+     /*specificira tip postupka koji se koristi za pozicioniranje elementa*/
      overflow: hidden;
+     /*navodi što bi se trebalo dogoditi ako sadržaj preplavi okvir elementa*/
      max-height: 580px;
+     /*postavlja maksimalnu visinu elemenata*/
      height: 100%;
+     /*postavlja visinu elemenata*/
      box-sizing: border-box;
+     /*omogućuje nam da u ukupnu širinu i visinu elementa uvrstimo obloge i obrube */
      box-shadow: 0 2px 10px #ccc;
+     /*postavljanje sjenki*/
      transition: all .5s;
+     /*omogućuju glatku promjenu vrijednosti svojstava tijekom zadanog trajanja*/
  }
  
  .singleBlog:hover {
      box-shadow: 0 2px 13px #ccc;
+     /*postavljanje sjenki*/
      transition: all .5s;
+     /*omogućuju glatku promjenu vrijednosti svojstava tijekom zadanog trajanja*/
  }
  
  .singleBlog:hover img {
      transform: scale(1.1);
+     /* primjenjuje 2D ili 3D transformaciju na element*/
      transition: all .4s;
+     /*omogućuju glatku promjenu vrijednosti svojstava tijekom zadanog trajanja*/
  }
  
  .blogContent {
      position: absolute;
+     /*specificira tip postupka koji se koristi za pozicioniranje elementa*/
      left: 0;
+     /*postavlja položaj elementa uz lijevi rub */
      bottom: -45px;
+     /*utječe na vertikalni položaj pozicioniranog elementa. */
      width: 100%;
+     /*postavlja širinu elemenata*/
      color: #fff;
+     /*određuje boju teksta*/
      padding: 10px 5px;
+     /*koristi se za definisanje razmaka između ruba elementa i teksta koji se nalazi u elementu*/
      background: linear-gradient(45deg, rgba(21, 82, 153, 1) 0%, rgba(144, 192, 229, .4) 100%);
+     /*određuje boju pozadine elementa*/
      transition: all .5s;
+     /*omogućuju glatku promjenu vrijednosti svojstava tijekom zadanog trajanja*/
  }
  
  .singleBlog:hover .blogContent {
      bottom: 0;
+     /*utječe na vertikalni položaj pozicioniranog elementa. */
      transition: all .5s;
+     /*omogućuju glatku promjenu vrijednosti svojstava tijekom zadanog trajanja*/
  }
  
  .blogContent h3 {
      font-size: 20px;
+     /*određuje veličinu teksta*/
      font-weight: 500;
+     /*određuje debljinu znakova u tekstu*/
      margin: 0;
+     /*koriste se za stvaranje prostora oko elemenata*/
  }
  
  .blogContent h3 span {
      display: block;
+     /*određuje ponašanje zaslona elementa */
      font-size: 60%;
+     /*određuje veličinu teksta*/
      margin-top: 5px;
+     /*koriste se za stvaranje prostora oko elemenata*/
      font-weight: 600;
-     color: rgba(52, 73, 94, 1.0)
+     /*određuje debljinu znakova u tekstu*/
+     color: rgba(52, 73, 94, 1.0);
+     /*određuje boju teksta*/
  }
  
  .blogContent a {
      font-size: 14px;
+     /*određuje veličinu teksta*/
      font-weight: 500;
+     /*određuje debljinu znakova u tekstu*/
  }
  
  .blogContent .btn {
      display: inline-block;
+     /*određuje ponašanje zaslona elementa */
      padding: 5px 10px;
+     /*koristi se za definisanje razmaka između ruba elementa i teksta koji se nalazi u elementu*/
      border: 1px solid #fff;
+     /*određuje vrstu obruba za prikaz.*/
      border-radius: 3px;
+     /*postavljanje zaobljenjih uglova*/
      font-weight: 400;
+     /*određuje debljinu znakova u tekstu*/
  }
  
  .blogContent .btn:hover {
      background: rgba(52, 152, 219, 1.0);
+     /*određuje boju pozadine elementa*/
      transition: all .5s;
+     /*omogućuju glatku promjenu vrijednosti svojstava tijekom zadanog trajanja*/
      text-decoration: none;
+     /* koristi se za ukrašavanje teksta */
  }
  
  .blogContent a:hover {
      text-decoration: underline;
+     /* koristi se za ukrašavanje teksta */
  }
  
- @media (max-width:992px) {
+ @media (max-width:992px
+ /*postavlja maksimalnu širinu elemenata*/
+ 
+ ) {
      main {
          grid-template-columns: repeat(3, 1fr);
+         /*specificira broj (i širine) stupaca u rasporedu mreže.*/
          grid-gap: 20px;
+         /* definira veličinu razmaka između redaka i stupaca u rasporedu mreže*/
      }
  }
  
- @media (max-width:767px) {
+ @media (max-width:767px
+ /*postavlja maksimalnu širinu elemenata*/
+ 
+ ) {
      main {
          grid-template-columns: repeat(2, 1fr);
+         /*specificira broj (i širine) stupaca u rasporedu mreže.*/
          grid-gap: 15px;
+         /* definira veličinu razmaka između redaka i stupaca u rasporedu mreže*/
      }
      .blogContent {
          bottom: 0;
+         /*utječe na vertikalni položaj pozicioniranog elementa. */
      }
  }
  
- @media (max-width:500px) {
+ @media (max-width:500px
+ /*postavlja maksimalnu širinu elemenata*/
+ 
+ ) {
      main {
          grid-template-columns: repeat(1, 1fr);
+         /*specificira broj (i širine) stupaca u rasporedu mreže.*/
      }
  }
  
  .services {
      background: rgba(116, 185, 255, 0.09);
+     /*određuje boju pozadine elementa*/
      text-align: center;
+     /*određuje vodoravno poravnanje teksta u elementu.*/
  }
  
  .services h1 {
      display: inline-block;
+     /*određuje ponašanje zaslona elementa */
      text-transform: uppercase;
+     /*kontrolira pisanje velikih i malih slova teksta.*/
      border-bottom: 4px solid #3498db;
+     /*koristi se za postavljanje granice na dnu elementa */
      font-size: 20px;
+     /*određuje veličinu teksta*/
      padding-bottom: 10px;
+     /*koristi se za definisanje razmaka između ruba elementa i teksta koji se nalazi u elementu*/
      margin-top: 40px;
+     /*koriste se za stvaranje prostora oko elemenata*/
  }
  
  .cen {
      max-width: 1200px;
+     /*postavlja maksimalnu širinu elemenata*/
      margin: auto;
+     /*koriste se za stvaranje prostora oko elemenata*/
      overflow: hidden;
+     /*navodi što bi se trebalo dogoditi ako sadržaj preplavi okvir elementa*/
      padding: 20px;
+     /*koristi se za definisanje razmaka između ruba elementa i teksta koji se nalazi u elementu*/
  }
  
  .service {
      display: inline-block;
+     /*određuje ponašanje zaslona elementa */
      width: calc(100% / 3);
+     /*postavlja širinu elemenata*/
      color: black;
+     /*određuje boju teksta*/
      margin: 0 -2px;
+     /*koriste se za stvaranje prostora oko elemenata*/
      padding: 20px;
+     /*koristi se za definisanje razmaka između ruba elementa i teksta koji se nalazi u elementu*/
      box-sizing: border-box;
+     /*omogućuje nam da u ukupnu širinu i visinu elementa uvrstimo obloge i obrube */
      cursor: pointer;
+     /*određuje pokazivač miša koji će se prikazati kada kursor pokazuje na element*/
      transition: 0.4s;
+     /*omogućuju glatku promjenu vrijednosti svojstava tijekom zadanog trajanja*/
  }
  
  .service:hover {
      background: #ddd;
+     /*određuje boju pozadine elementa*/
  }
  
  .service i {
      color: #3498db;
+     /*određuje boju teksta*/
      font-size: 34px;
+     /*određuje veličinu teksta*/
      margin-bottom: 30px;
+     /*koriste se za stvaranje prostora oko elemenata*/
  }
  
  .service h2 {
      font-size: 18px;
+     /*određuje veličinu teksta*/
      text-transform: uppercase;
+     /*kontrolira pisanje velikih i malih slova teksta.*/
      font-weight: 500;
+     /*određuje debljinu znakova u tekstu*/
      margin: 0;
+     /*koriste se za stvaranje prostora oko elemenata*/
  }
  
  .service p {
      color: gray;
+     /*određuje boju teksta*/
      font-size: 15px;
+     /*određuje veličinu teksta*/
      font-weight: 500;
+     /*određuje debljinu znakova u tekstu*/
  }
  
- @media screen and (max-width: 800px) {
+ @media screen and (max-width: 800px
+ /*postavlja maksimalnu širinu elemenata*/
+ 
+ ) {
      .service {
          width: 50%;
+         /*postavlja širinu elemenata*/
      }
  }
  
- @media screen and (max-width: 500px) {
+ @media screen and (max-width: 500px
+ /*postavlja maksimalnu širinu elemenata*/
+ 
+ ) {
      .service {
          width: 100%;
+         /*postavlja širinu elemenata*/
      }
  }

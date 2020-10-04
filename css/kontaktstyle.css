@@ -1,7 +1,6 @@
 * {
     margin: 0;
     padding: 0;
-    font-family: "montserrat", sans-serif;
 }
 
 .contact-section {
@@ -12,7 +11,7 @@
 
 .contact-section h1 {
     text-align: center;
-    color: #34495e;
+    color: white;
 }
 
 .ferr {
@@ -22,7 +21,7 @@
 .border {
     width: 100px;
     height: 10px;
-    background: #34495e;
+    background: white;
     margin: 40px auto;
 }
 

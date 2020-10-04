@@ -1,180 +1,275 @@
 @import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
 * {
     margin: 0;
+    /*koriste se za stvaranje prostora oko elemenata*/
     padding: 0;
+    /*koristi se za definisanje razmaka između ruba elementa i teksta koji se nalazi u elementu*/
     box-sizing: border-box;
+    /*omogućuje nam da u ukupnu širinu i visinu elementa uvrstimo obloge i obrube */
     font-family: 'Poppins', sans-serif;
+    /* navodi font elementa*/
 }
 
 nav {
     position: relative;
+    /*specificira tip postupka koji se koristi za pozicioniranje elementa*/
     z-index: 999;
+    /*svojstvo određuje redoslijed slaganja elementa.*/
     background: #3175B0;
+    /*određuje boju pozadine elementa*/
 }
 
 nav:after {
     content: '';
+    /* koristi se za umetanje sadržaja */
     clear: both;
+    /*Svojstvom clear isključuje se djelovanje svojstva float na elemente koji slijede*/
     display: table;
+    /*određuje ponašanje zaslona elementa */
 }
 
 nav .logo {
     float: left;
+    /*izbacuje element iz normalnog toka dokumenta i postavlja ga uz lijevi (ili desni) rub roditeljskog elementa*/
     color: white;
-    font-size: 27px;
+    /*određuje boju teksta*/
+    font-size: 21px;
+    /*određuje veličinu teksta*/
     font-weight: 600;
+    /*određuje debljinu znakova u tekstu*/
     line-height: 70px;
+    /*određuje visinu linija*/
     padding-left: 60px;
+    /*koristi se za definisanje razmaka između ruba elementa i teksta koji se nalazi u elementu*/
 }
 
 nav ul {
     float: right;
+    /*izbacuje element iz normalnog toka dokumenta i postavlja ga uz lijevi (ili desni) rub roditeljskog elementa*/
     margin-right: 40px;
+    /*koriste se za stvaranje prostora na desnoj strani elemenata*/
     list-style: none;
+    /*određuje vrstu oznake stavke popisa na popisu.*/
     position: relative;
+    /*specificira tip postupka koji se koristi za pozicioniranje elementa*/
 }
 
 nav ul li {
     float: left;
+    /*izbacuje element iz normalnog toka dokumenta i postavlja ga uz lijevi (ili desni) rub roditeljskog elementa*/
     display: inline-block;
+    /*određuje ponašanje zaslona elementa */
     background: #3175B0;
+    /*određuje boju pozadine elementa*/
     margin: 0 5px;
+    /*koriste se za stvaranje prostora oko elemenata*/
 }
 
 nav ul li a {
     color: white;
+    /*određuje boju teksta*/
     line-height: 70px;
+    /*određuje visinu linija*/
     text-decoration: none;
+    /* koristi se za ukrašavanje teksta */
     font-size: 18px;
+    /*određuje veličinu teksta*/
     padding: 8px 15px;
+    /*koristi se za definisanje razmaka između ruba elementa i teksta koji se nalazi u elementu*/
 }
 
 nav ul li a:hover {
     color: cyan;
+    /*određuje boju teksta*/
     border-radius: 5px;
+    /*postavljanje zaobljenjih uglova*/
     box-shadow: 0 0 5px #33ffff, 0 0 10px #66ffff;
+    /*postavljanje sjenki*/
 }
 
 nav ul ul li a:hover {
     box-shadow: none;
+    /*postavljanje sjenki*/
 }
 
 nav ul ul {
     position: absolute;
+    /*specificira tip postupka koji se koristi za pozicioniranje elementa*/
     top: 90px;
+    /*položaj uz gornji rub (kod okomitog pomaka)*/
     border-top: 3px solid cyan;
+    /*koristi se za postavljanje granice na vrhu elementa */
     opacity: 0;
+    /*postavlja razinu neprozirnost za element*/
     visibility: hidden;
+    /*postavlja da li je element vidljiv ili ne*/
     transition: top .3s;
+    /*omogućuju glatku promjenu vrijednosti svojstava tijekom zadanog trajanja*/
 }
 
 nav ul ul ul {
     border-top: none;
+    /*koristi se za postavljanje granice na vrhu elementa */
 }
 
 nav ul li:hover>ul {
     top: 70px;
+    /*položaj uz gornji rub (kod okomitog pomaka)*/
     opacity: 1;
+    /*postavlja razinu neprozirnost za element*/
     visibility: visible;
+    /*postavlja da li je element vidljiv ili ne*/
 }
 
 nav ul ul li {
     position: relative;
+    /*specificira tip postupka koji se koristi za pozicioniranje elementa*/
     margin: 0px;
+    /*koriste se za stvaranje prostora oko elemenata*/
     width: 150px;
+    /*postavlja širinu elemenata*/
     float: none;
+    /*izbacuje element iz normalnog toka dokumenta i postavlja ga uz lijevi (ili desni) rub roditeljskog elementa*/
     display: list-item;
+    /*određuje ponašanje zaslona elementa */
     border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+    /*koristi se za postavljanje granice na dnu elementa */
 }
 
 nav ul ul li a {
     line-height: 50px;
+    /*određuje visinu linija*/
 }
 
 nav ul ul ul li {
     position: relative;
+    /*specificira tip postupka koji se koristi za pozicioniranje elementa*/
     top: -60px;
+    /*položaj elementa uz gornji rub (kod okomitog pomaka)*/
     left: 150px;
+    /*postavlja položaj elementa uz lijevi rub */
 }
 
 nav .show,
 nav .icon,
 nav input {
     display: none;
+    /*određuje ponašanje zaslona elementa */
 }
 
 .fa-plus {
     font-size: 15px;
+    /*određuje veličinu teksta*/
     margin-left: 40px;
+    /*koriste se za stvaranje prostora oko elemenata*/
 }
 
-@media all and (max-width: 968px) {
+@media all and (max-width: 968px
+/*određuje maksimalnu širinu */
+
+) {
     nav ul {
         margin-right: 0px;
+        /*koriste se za stvaranje prostora oko elemenata*/
         float: left;
+        /*izbacuje element iz normalnog toka dokumenta i postavlja ga uz lijevi (ili desni) rub roditeljskog elementa*/
     }
     nav .logo {
         padding-left: 30px;
+        /*koristi se za definisanje razmaka između ruba elementa i teksta koji se nalazi u elementu*/
         width: 100%;
+        /*postavlja širinu elemenata*/
     }
     .show+a,
     ul {
         display: none;
+        /*određuje ponašanje zaslona elementa */
     }
     nav ul li,
     nav ul ul li {
         display: block;
+        /*određuje ponašanje zaslona elementa */
         width: 100%;
+        /*postavlja širinu elemenata*/
     }
     nav ul li a:hover {
         box-shadow: none;
+        /*postavljanje sjenki*/
     }
     .show {
         display: block;
+        /*određuje ponašanje zaslona elementa */
         color: white;
+        /*određuje boju teksta*/
         font-size: 18px;
+        /*određuje veličinu teksta*/
         padding: 0 20px;
+        /*koristi se za definisanje razmaka između ruba elementa i teksta koji se nalazi u elementu*/
         line-height: 70px;
+        /*određuje visinu linija*/
         cursor: pointer;
+        /*određuje pokazivač miša koji će se prikazati kada kursor pokazuje na element*/
     }
     .show:hover {
         color: cyan;
+        /*određuje boju teksta*/
     }
     .icon {
         display: block;
+        /*određuje ponašanje zaslona elementa */
         color: white;
+        /*određuje boju teksta*/
         position: absolute;
+        /*specificira tip postupka koji se koristi za pozicioniranje elementa*/
         top: 0;
+        /*položaj uz gornji rub (kod okomitog pomaka)*/
         right: 40px;
+        /*položaj uz desni rub*/
         line-height: 70px;
+        /*određuje visinu linija*/
         cursor: pointer;
+        /*određuje pokazivač miša koji će se prikazati kada kursor pokazuje na element*/
         font-size: 25px;
+        /*određuje veličinu teksta*/
     }
     nav ul ul {
         top: 70px;
+        /*položaj uz gornji rub (kod okomitog pomaka)*/
         border-top: 0px;
+        /*koristi se za postavljanje granice na vrhu elementa */
         float: none;
+        /*izbacuje element iz normalnog toka dokumenta i postavlja ga uz lijevi (ili desni) rub roditeljskog elementa*/
         position: static;
+        /*specificira tip postupka koji se koristi za pozicioniranje elementa*/
         display: none;
+        /*određuje ponašanje zaslona elementa */
         opacity: 1;
+        /*postavlja razinu neprozirnost za element*/
         visibility: visible;
+        /*postavlja da li je element vidljiv ili ne*/
     }
     nav ul ul a {
         padding-left: 40px;
+        /*koristi se za definisanje razmaka između ruba elementa i teksta koji se nalazi u elementu*/
     }
     nav ul ul ul a {
         padding-left: 80px;
+        /*koristi se za definisanje razmaka između ruba elementa i teksta koji se nalazi u elementu*/
     }
     nav ul ul ul li {
         position: static;
+        /*specificira tip postupka koji se koristi za pozicioniranje elementa*/
     }
     [id^=btn]:checked+ul {
         display: block;
+        /*određuje ponašanje zaslona elementa */
     }
     nav ul ul li {
         border-bottom: 0px;
+        /*koristi se za postavljanje granice na dnu elementa */
     }
     span.cancel:before {
         content: '\f00d';
+        /* koristi se za umetanje sadržaja */
     }
 }
