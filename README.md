@@ -8,7 +8,7 @@ Below are the main screens of the application, showcasing its core functionaliti
 
 ![Homepage](https://github.com/user-attachments/assets/a6965310-cab5-4357-ab79-2bc5c4911aec)
 
-This is the main page of the application, displaying the welcome message and primary navigation options.
+This is the main page of the application, displaying images of landmarks and key attractions in the city, and primary navigation options.
 
 ---
 
@@ -24,7 +24,7 @@ This section displays the latest news and updates relevant to users, such as pla
 
 ![Services](https://github.com/user-attachments/assets/e9086561-b450-41e3-b688-b2c45126759b)
 
-This page presents the list of available services with detailed descriptions and options for booking or inquiries.
+This page presents the list of available services.
 
 ---
 
@@ -64,4 +64,4 @@ The gallery page showcases images of the city, including scenic views, historica
 
 ![Contact](https://github.com/user-attachments/assets/8a214f18-2308-484e-9cbb-f7899aad6edd)
 
-This page provides users with ways to get in touch — including a contact form, email address, phone number, and social media links.
+This page provides users with ways to get in touch — including a contact form, email address and phone number.
